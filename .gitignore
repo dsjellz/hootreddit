@@ -8,3 +8,7 @@ composer.lock
 Thumbs.db
 /app/config/local
 /app/config/production
+/app/config/hootsuite.php
+/app/config/database.php
+/app/config/reddit.php
+.idea
