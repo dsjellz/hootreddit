@@ -4,13 +4,12 @@
     </div>
     <img class="hs_networkAvatar" src="{{ stripslashes($message->thumb) }}" alt="thumbnail">
 
-    <a href="#" class="hs_networkName">{{$message->author}}</a>
+    <a href="#" class="hs_networkName">{{$message->title}}</a>
     <a target="_blank" href="{{$message->url}}" class="hs_postTime">
         {{$message->created}} ago in /r/{{$message->subreddit}}
-        ({{$message->domain}})
+        ({{$message->domain}}) by {{$message->author}}
     </a>
 	<div class="hs_messageContent">
-        <a target="_blank" href="{{$message->url}}">{{$message->title}}</a><br />
             <!-- Comment -->
             <div class="hs_messageComments">
                 <span class="hs_arrow">☗</span>
